@@ -14,7 +14,7 @@ import com.cts.AuditSeverity.pojo.QuestionsEntity;
  * 
  *
  */
-@FeignClient(url= "http://${API:localhost:9120/}",name="audit-checklist")
+@FeignClient(url= "http://${API:localhost:9120}/api/checklist",name="audit-checklist")
 public interface AuditCheckListProxy {
 	
 	@PostMapping("/getChecklist")

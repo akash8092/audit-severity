@@ -10,7 +10,7 @@ import com.cts.AuditSeverity.pojo.AuthResponse;
  * 
  *
  */
-@FeignClient(url = "http://${API://localhost:8090/}", name = "audit-auth")
+@FeignClient(url = "http://${API:localhost:8090}/api/authapp", name = "audit-auth")
 public interface AuthClient {
 	
 	

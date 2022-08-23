@@ -13,7 +13,7 @@ import com.cts.AuditSeverity.pojo.AuditBenchmark;
  * 
  *
  */
-@FeignClient(url="http://${API:localhost:8008/}",name="audit-benchmark")
+@FeignClient(url="http://${API:localhost:8008}/api/benchmark",name="audit-benchmark")
 public interface AuditBenchmarkFeignclient {
 
 	@GetMapping("/AuditBenchmark")
