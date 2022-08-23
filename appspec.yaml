@@ -1,0 +1,12 @@
+version: 1.0
+Resources:
+- TargerService:
+  Type: AWS::ECS::Service
+  Properties:
+  TaskDefinition: "arn:aws:ecs:us-west-2:370455269849:task-definition/severity-td:1"
+  LoadBalancerInfo: 
+
+
+  ContainerName: "audit-severity-container"
+  ContainerPort: "9092"
+  PlatformVersion: "LATEST"
